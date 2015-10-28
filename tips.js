@@ -5,10 +5,10 @@ console.log(
 
 var tips = [
  1 + " Functions may return or print (or both) ",
- 2 + " Comment function before doing it. ",
+ 2 + " Document a function before implementing it. ",
  3 + " Inside a function, only use the parameters it receives. ",
  4 + " Think of good names. ",
- 5 + " Respect indentation. "
+ 5 + " Respect indentation and spacing. "
 ];
 
 
@@ -43,7 +43,7 @@ sayHi( getSomeName() + " Smith" ); // Pass as argument
 
 
 
-// 2 - Comment function before doing it.
+// 2 - Document a function before implementing it.
 
 // To understand what it has to do, what data it needs (parameters) and
 // if it prints or returns something. If it's too difficult to describe
@@ -88,14 +88,15 @@ function printEpisode(episode) {
 // Example: reverseWords("this is it") returns "it is this"
 function reverseWords(sentence) {
 	var words = sentence.split(" ");
-	return words.reverse();
+	return words.reverse().join(" ");
 }
 
 
 
-// 5 - Respect indentation.
+// 5 - Respect indentation and spacing.
 
 // Important for the code to be readable, avoid mistakes and spot missing things.
+// See for example: http://www.w3schools.com/js/js_conventions.asp
 
 var money = 100;
 
@@ -104,7 +105,7 @@ if (money > 0) {
 	console.log("You have some money");
 
 	if (money > 1000000) {
-		console.log("You're millionaire!");
+		console.log("You're a millionaire!");
 	} else {
 		console.log("You're not a millionaire");
 	}
